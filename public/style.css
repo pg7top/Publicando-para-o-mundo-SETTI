@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #24292e;
+    color: #ffffff;
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main {
+    background: #2f363d;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+
+    width: 100%;
+    max-width: 464px;
+    padding: 28px 24px;
+    margin: 0 auto;
+
+    border-radius: 8px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 128px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+main > div {
+    font-size: 12pt;
+    line-height: 1.5;
+}
+
+main > div:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+b {
+    font-weight: 700;
+}
+
+p {
+    font-size: 12pt;
+    line-height: 1.6;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+ul {
+    padding-left: 28px;
+    margin: 12px 0 0;
+    text-align: left;
+}
+
+li {
+    font-size: 12pt;
+    line-height: 1.7;
+    padding-left: 4px;
+    text-align: left;
+}
+
+a {
+    display: inline-block;
+    color: #75b7ff;
+    text-decoration: none;
+    margin: 4px 8px;
+    font-size: 12pt;
+    overflow-wrap: anywhere;
+}
+
+a:hover {
+    color: #a8d2ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    main {
+        padding: 24px 18px;
+    }
+
+    main > div,
+    p,
+    li,
+    a {
+        font-size: 11pt;
+    }
+}
